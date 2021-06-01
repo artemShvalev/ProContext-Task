@@ -2,4 +2,9 @@ ul,li{
   list-style-type: none;
   margin: 0;
   padding: 0;
+  span::after{
+    font-family: 'Material Icons';
+    content: "chevron_right";
+    color: grey;
+  }
 }
