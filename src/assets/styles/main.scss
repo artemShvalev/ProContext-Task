@@ -2,7 +2,7 @@ ul,li{
   list-style-type: none;
   margin: 0;
   padding: 0;
-  span::after{
+  span::before{
     font-family: 'Material Icons';
     content: "chevron_right";
     color: grey;
@@ -29,4 +29,11 @@ input[type="checkbox"] {
 }
 #item-4 {
   margin-top: 22px;
+}
+
+span::after {
+    font-family: "Material Icons";
+    content: "chevron_down";
+    color: grey;
+    z-index: 100;
 }
