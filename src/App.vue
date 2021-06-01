@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ListLeft/>
+    <ListRight/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import ListLeft from './components/ListLeft.vue';
+import ListRight from './components/ListRight.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    ListLeft,
+    ListRight,
   },
 };
 </script>
