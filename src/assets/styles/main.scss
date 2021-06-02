@@ -109,6 +109,7 @@ input[type="checkbox"] {
 
 .all__list {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   position: absolute;
@@ -121,10 +122,9 @@ input[type="checkbox"] {
   width: 500px;
   height: 150px;
   border: 1px solid rgb(202, 202, 202);
-  margin-bottom: 10px;
 }
 strong{
-  margin-bottom: 50px;
+  margin:10px 0 0 0;
 }
 
 button{
@@ -139,4 +139,13 @@ button{
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
+}
+
+.hidden, .hiddenElem {
+  background-color: rgb(180, 168, 120);
+  width: 500px;
+  cursor: pointer;
+}
+.show, .showElem{
+  cursor: pointer;
 }

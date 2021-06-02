@@ -1,25 +1,37 @@
-/<template>
+/* eslint-disable max-len */
+<template>
   <div>
 
     <div class="all__list">
-    <div class="template__result">
-      <strong> List1 </strong>
-      <div class="list1__result">
+      <strong
+      :class="{hiddenElem: !elem1, showElem: elem1}"
+      @click="elem1 = !elem1"> List1
+      </strong>
+      <div class="list1__result"  v-show="elem1">
         <button>Перемешать</button>
       </div>
-      <strong> List2 </strong>
-      <div class="list1__result">
+      <strong @click="elem = !elem"
+      :class="{hidden: !elem, show: elem}"
+      > List2
+      </strong>
+      <div class="list1__result" v-show="elem">
         <button>Перемешать</button>
       </div>
-      <strong> List3 </strong>
-      <div class="list1__result">
+      <strong
+      :class="{hiddenElem: !elem2, showElem: elem2}"
+      @click="elem2 = !elem2"
+      > List3 </strong>
+      <div class="list1__result" v-show="elem2">
         <button>Перемешать</button>
       </div>
-      <strong> List4 </strong>
-      <div class="list1__result">
+      <strong
+      :class="{hiddenElem: !elem3, showElem: elem3}"
+      @click="elem3 = !elem3">
+       List4
+       </strong>
+      <div class="list1__result" v-show="elem3">
         <button>Перемешать</button>
       </div>
-    </div>
   </div>
 
   </div>
@@ -29,10 +41,14 @@
 export default {
   props: {
     value: Number,
+    color: Object,
   },
   data() {
     return {
       elem: true,
+      elem1: true,
+      elem2: true,
+      elem3: true,
     };
   },
 };
