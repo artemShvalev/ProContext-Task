@@ -1,12 +1,15 @@
-ul,li{
+ul,
+li {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  span::before{
+
+  span::before {
     font-family: 'Material Icons';
     content: "chevron_right";
     color: grey;
   }
+
   span::after {
     font-family: "Material Icons";
     content: "chevron_down";
@@ -14,9 +17,11 @@ ul,li{
     z-index: 100;
   }
 }
-li{
+
+li {
   margin-left: 50px;
 }
+
 input[type="checkbox"] {
   position: absolute;
   left: 10px;
@@ -27,65 +32,111 @@ input[type="checkbox"] {
 #item-1 {
   margin-top: 24px;
 }
+
 #item-2 {
   margin-top: 22px;
 }
+
 #item-3 {
   margin-top: 22px;
 }
+
 #item-4 {
   margin-top: 22px;
 }
 
-  .item__number1{
-    width: 40px;
-    position: relative;
-    top: -25px;
-    left: 120px;
-  }
-  .item__number2{
-    width: 40px;
-    position: relative;
-    top: -25px;
-    left: 120px;
-  }
-  .item__number3{
-    width: 40px;
-    position: relative;
-    top: -25px;
-    left: 120px;
-  }
-  .item__number4{
-    width: 40px;
-    position: relative;
-    top: -25px;
-    left: 120px;
-  }
-  .item__color1{
-    width: 40px;
-    position: relative;
-    top: -22px;
-    left: 120px;
-    margin-left: 10px;
-  }
-  .item__color2{
-    width: 40px;
-    position: relative;
-    top: -22px;
-    left: 120px;
-    margin-left: 10px;
-  }
-  .item__color3{
-    width: 40px;
-    position: relative;
-    top: -22px;
-    left: 120px;
-    margin-left: 10px;
-  }
-  .item__color4{
-    width: 40px;
-    position: relative;
-    top: -22px;
-    left: 120px;
-    margin-left: 10px;
-  }
+.item__number1 {
+  width: 40px;
+  position: relative;
+  top: -25px;
+  left: 120px;
+}
+
+.item__number2 {
+  width: 40px;
+  position: relative;
+  top: -25px;
+  left: 120px;
+}
+
+.item__number3 {
+  width: 40px;
+  position: relative;
+  top: -25px;
+  left: 120px;
+}
+
+.item__number4 {
+  width: 40px;
+  position: relative;
+  top: -25px;
+  left: 120px;
+}
+
+.item__color1 {
+  width: 40px;
+  position: relative;
+  top: -22px;
+  left: 120px;
+  margin-left: 10px;
+}
+
+.item__color2 {
+  width: 40px;
+  position: relative;
+  top: -22px;
+  left: 120px;
+  margin-left: 10px;
+}
+
+.item__color3 {
+  width: 40px;
+  position: relative;
+  top: -22px;
+  left: 120px;
+  margin-left: 10px;
+}
+
+.item__color4 {
+  width: 40px;
+  position: relative;
+  top: -22px;
+  left: 120px;
+  margin-left: 10px;
+}
+
+// Right Lists
+
+.all__list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  margin-top: 20px;
+}
+
+.list1__result {
+  width: 500px;
+  height: 150px;
+  border: 1px solid rgb(202, 202, 202);
+  margin-bottom: 10px;
+}
+strong{
+  margin-bottom: 50px;
+}
+
+button{
+  float: right;
+  width: 150px;
+  height: 30px;
+  background-color: cornflowerblue;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}

@@ -1,3 +1,6 @@
+/* eslint-disable no-return-assign */
+/* eslint-disable no-return-assign */
+/* eslint-disable radix */
 <!-- eslint-disable max-len -->
 <template>
 <div>
@@ -99,7 +102,6 @@ export default {
       list2: false,
       list3: false,
       list4: false,
-      rotate: false,
       value: 0,
       color: {
         red: '#fc0303',
@@ -114,11 +116,19 @@ export default {
       },
     };
   },
+  wastch: {
+    value: {
+      deep: true,
+      handler() {
+        // eslint-disable-next-line radix
+        this.value.forEach((n) => n.quantity === Math.max(0, parseInt(n.quantity) || 0));
+        return this.value;
+      },
+    },
+  },
 };
 </script>
 
 <style lang="scss">
 @import "@/assets/styles/main.scss";
 </style>
-
-// Кинуть Пропсы в райт коипонент
