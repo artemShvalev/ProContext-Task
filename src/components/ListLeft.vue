@@ -6,9 +6,20 @@
     <label for="list">List 1 <span  :class="{active: list}"></span></label>
 
     <input type="checkbox" id="item-1" v-model="list1"> <li>Item 1</li>
-    <input type="checkbox" v-model="list1"> <li>Item 2</li>
-    <input type="checkbox" v-model="list1"> <li>Item 3</li>
-    <input type="checkbox" v-model="list1"> <li>Item 4</li>
+    <input class="item__number1" type="number" value="0">
+    <input class="item__color1"  type="color">
+
+    <input type="checkbox" id="item-1" v-model="list1"> <li>Item 2</li>
+    <input class="item__number2" type="number" value="0">
+    <input class="item__color2"  type="color">
+
+    <input type="checkbox" id="item-1" v-model="list1"> <li>Item 3</li>
+    <input class="item__number3" type="number" value="0">
+    <input class="item__color3"  type="color">
+
+    <input type="checkbox" id="item-1" v-model="list1"> <li>Item 4</li>
+    <input class="item__number4" type="number" value="0">
+    <input class="item__color4"  type="color">
   </ul>
   <ul>
     <input type="radio" id="list-2" v-model="drawer"  @click.stop="list2 = !list2, drawer = !drawer">

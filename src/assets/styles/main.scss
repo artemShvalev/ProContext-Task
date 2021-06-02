@@ -7,19 +7,25 @@ ul,li{
     content: "chevron_right";
     color: grey;
   }
+  span::after {
+    font-family: "Material Icons";
+    content: "chevron_down";
+    color: grey;
+    z-index: 100;
+  }
 }
 li{
   margin-left: 50px;
 }
 input[type="checkbox"] {
   position: absolute;
-  left: 30px;
+  left: 10px;
   margin: 0;
   padding: 0;
 }
-// 
+
 #item-1 {
-  margin-top: 22px;
+  margin-top: 24px;
 }
 #item-2 {
   margin-top: 22px;
@@ -31,9 +37,55 @@ input[type="checkbox"] {
   margin-top: 22px;
 }
 
-span::after {
-    font-family: "Material Icons";
-    content: "chevron_down";
-    color: grey;
-    z-index: 100;
-}
+  .item__number1{
+    width: 40px;
+    position: relative;
+    top: -25px;
+    left: 120px;
+  }
+  .item__number2{
+    width: 40px;
+    position: relative;
+    top: -25px;
+    left: 120px;
+  }
+  .item__number3{
+    width: 40px;
+    position: relative;
+    top: -25px;
+    left: 120px;
+  }
+  .item__number4{
+    width: 40px;
+    position: relative;
+    top: -25px;
+    left: 120px;
+  }
+  .item__color1{
+    width: 40px;
+    position: relative;
+    top: -22px;
+    left: 120px;
+    margin-left: 10px;
+  }
+  .item__color2{
+    width: 40px;
+    position: relative;
+    top: -22px;
+    left: 120px;
+    margin-left: 10px;
+  }
+  .item__color3{
+    width: 40px;
+    position: relative;
+    top: -22px;
+    left: 120px;
+    margin-left: 10px;
+  }
+  .item__color4{
+    width: 40px;
+    position: relative;
+    top: -22px;
+    left: 120px;
+    margin-left: 10px;
+  }
