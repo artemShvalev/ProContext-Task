@@ -5,10 +5,10 @@
 <template>
 <div>
  <ul>
-    <input type="radio" id="list" v-model="list" @click="list1 = !list1, list = !list">
+    <input type="radio" id="list" v-model="list"  @click="list1 = !list1, list = !list">
     <label for="list">List 1 <span  :class="{active: list}"></span></label>
 
-    <input type="checkbox" id="item-1" v-model="list1"> <li>Item 1</li>
+    <input type="checkbox" id="item-1" v-model="list1" min="0"> <li>Item 1</li>
     <input class="item__number1" type="number" :value="value">
     <input class="item__color1"  type="color"  :value="color.red">
 
@@ -30,19 +30,19 @@
     <label for="list-2">List 2 <span></span></label>
 
     <input type="checkbox" id="item-2" v-model="list2"> <li>Item 1</li>
-    <input class="item__number1" type="number" value="0">
+    <input class="item__number1" type="number" :value="value">
     <input class="item__color1"  type="color"  :value="color.yellow">
 
     <input type="checkbox" id="item-2" v-model="list2"> <li>Item 2</li>
-    <input class="item__number1" type="number" value="0">
+    <input class="item__number1" type="number" :value="value">
     <input class="item__color1"  type="color" :value="color.green">
 
     <input type="checkbox" id="item-2" v-model="list2"> <li>Item 3</li>
-    <input class="item__number1" type="number" value="0">
+    <input class="item__number1" type="number" :value="value">
     <input class="item__color1"  type="color"  :value="color.pink">
 
     <input type="checkbox" id="item-2" v-model="list2"> <li>Item 4</li>
-    <input class="item__number1" type="number" value="0">
+    <input class="item__number1" type="number" :value="value">
     <input class="item__color1"  type="color"  :value="color.red">
   </ul>
   <ul>
@@ -51,20 +51,20 @@
     <label for="list-3">List 3 <span></span></label>
 
     <input type="checkbox" id="item-3" v-model="list3"> <li>Item 1</li>
-    <input class="item__number1" type="number" value="0">
+    <input class="item__number1" type="number" :value="value">
     <input class="item__color1"  type="color"  :value="color.sunlightgreen">
 
     <input type="checkbox" id="item-3" v-model="list3"> <li>Item 2</li>
-    <input class="item__number1" type="number" value="0">
-    <input class="item__color1"  type="color" :value="color.oceanblue">
+    <input class="item__number1" type="number" :value="value">
+    <input class="item__color1"  type="color"  :value="color.oceanblue">
 
     <input type="checkbox" id="item-3" v-model="list3"> <li>Item 3</li>
-    <input class="item__number1" type="number" value="0">
-    <input class="item__color1"  type="color" :value="color.lightblue">
+    <input class="item__number1" type="number" :value="value">
+    <input class="item__color1"  type="color"  :value="color.lightblue">
 
     <input type="checkbox" id="item-3" v-model="list3"> <li>Item 4</li>
-    <input class="item__number1" type="number" value="0">
-    <input class="item__color1"  type="color" :value="color.purple">
+    <input class="item__number1" type="number" :value="value">
+    <input class="item__color1"  type="color"  :value="color.purple">
   </ul>
   <ul>
     <!-- list4 -->
@@ -72,19 +72,19 @@
     <label for="list-4">List 4 <span></span></label>
 
     <input type="checkbox" id="item-4" v-model="list4"> <li>Item 1</li>
-    <input class="item__number1" type="number" value="0">
+    <input class="item__number1" type="number" :value="value">
     <input class="item__color1"  type="color"  :value="color.green">
 
     <input type="checkbox" id="item-4" v-model="list4"> <li>Item 2</li>
-    <input class="item__number1" type="number" value="0">
+    <input class="item__number1" type="number" :value="value">
     <input class="item__color1"  type="color"  :value="color.yellow">
 
     <input type="checkbox" id="item-4" v-model="list4"> <li>Item 3</li>
-    <input class="item__number1" type="number" value="0">
+    <input class="item__number1" type="number" :value="value">
     <input class="item__color1"  type="color"  :value="color.pink">
 
     <input type="checkbox" id="item-4" v-model="list4"> <li>Item 4</li>
-    <input class="item__number1" type="number" value="0">
+    <input class="item__number1" type="number" :value="value">
     <input class="item__color1"  type="color"  :value="color.oceanblue">
   </ul>
 </div>
@@ -116,7 +116,7 @@ export default {
       },
     };
   },
-  wastch: {
+  watch: {
     value: {
       deep: true,
       handler() {

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <ListLeft/>
-    <ListRight/>
+    <ListRight :propValue="propValue.value" v-bind:propColor="propColor.color" />
   </div>
 </template>
 
@@ -14,6 +14,16 @@ export default {
   components: {
     ListLeft,
     ListRight,
+  },
+  props: {
+    propValue: {
+      value: Number,
+      default: 0,
+    },
+    propColor: {
+      color: Object,
+      default: false,
+    },
   },
 };
 </script>
